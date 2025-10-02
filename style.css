@@ -1,0 +1,480 @@
+:root {
+  --dark-brown-bg: #33292a;
+  --brown-bg: #644b4f;
+  --our-trips-bg: #f2f2f2;
+  --grey-bg: #333333;
+  --orange: #efa69d;
+  --link-hover: #e9877b;
+  --btn-hover: #8c686f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 44px;
+  }
+}
+
+/* NAVIGATION */
+
+.navigation {
+  height: 60px;
+  background-color: var(--dark-brown-bg);
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  color: var(--link-hover);
+}
+
+.navigation-list {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px 0;
+}
+
+.menu-icon {
+  display: none;
+  height: 60px;
+  width: 55px;
+  margin-left: auto;
+  margin-right: 12px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.menu-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .navigation-list {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation-list {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .navigation-list {
+    width: 70%;
+  }
+}
+
+/* HERO */
+
+.hero {
+  height: calc(100vh - 60px);
+  background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.hero-text {
+  text-align: right;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .hero-wrapper {
+    width: 80%;
+  }
+  .hero-text {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-wrapper {
+    width: 70%;
+  }
+  .hero-text {
+    font-size: 44px;
+  }
+}
+
+/* ABOUT US */
+
+.about-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.about-image {
+  background-image: url(images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg);
+  background-position: center 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 350px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  height: 400px;
+}
+
+@media (min-width: 768px) {
+  .about-wrapper {
+    width: 80%;
+    padding: 70px 0;
+    flex-direction: row;
+  }
+
+  .about-image {
+    height: auto;
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-wrapper {
+    width: 70%;
+    gap: 40px;
+  }
+}
+
+/* WHAT WE DO */
+
+.what-we-do {
+  background-color: var(--dark-brown-bg);
+  color: white;
+  text-align: center;
+}
+
+.what-we-do-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.what-we-do-text {
+  margin-bottom: 60px;
+}
+
+.icon {
+  margin-bottom: 40px;
+}
+
+.icon:last-child {
+  margin-bottom: 0;
+}
+
+.icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+.icon p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-wrapper {
+    width: 80%;
+    padding: 70px 0;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon {
+    margin-bottom: 0;
+  }
+
+  .icon p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .what-we-do-wrapper {
+    width: 70%;
+  }
+}
+
+/* OUR TRIPS */
+
+.our-trips-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.our-trips-wrapper img {
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.our-trips-title {
+  height: 80px;
+  background-color: var(--our-trips-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.our-trips-title h2 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .our-trips-wrapper {
+    width: 80%;
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    grid-gap: 10px;
+  }
+
+  .our-trips-wrapper img {
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .our-trips-title {
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .our-trips-wrapper {
+    width: 70%;
+  }
+}
+
+/* WHERE DO YOU WANT TO GO */
+
+.where-to-go {
+  background-color: var(--brown-bg);
+  color: white;
+}
+
+.where-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.where-text p {
+  margin-bottom: 32px;
+}
+
+.contact-btn {
+  padding: 14px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+@media (min-width: 768px) {
+  .where-wrapper {
+    width: 80%;
+    padding: 70px 0;
+    display: flex;
+    gap: 54px;
+  }
+
+  .where-title {
+    width: 30%;
+  }
+
+  .where-text {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .where-wrapper {
+    width: 70%;
+  }
+}
+
+/* REVIEWS */
+
+.reviews-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.reviews-text {
+  margin: 0 auto 60px auto;
+}
+
+.card-img {
+  margin-bottom: 20px;
+}
+
+.card-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review-card {
+  margin-bottom: 50px;
+}
+
+.review-card:last-child {
+  margin-bottom: 0;
+}
+
+.card-text {
+  margin-bottom: 20px;
+}
+
+.card-name {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .reviews-wrapper {
+    width: 80%;
+    padding: 70px 0;
+  }
+
+  .reviews-text {
+    width: 50%;
+  }
+
+  .reviews-cards {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .review-card {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .reviews-wrapper {
+    width: 70%;
+  }
+}
+
+/* GALLERY */
+
+.gallery-wrapper img {
+  display: block;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (min-width: 1400px) {
+  .gallery-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--grey-bg);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.contact-link {
+  color: var(--orange);
+}
+
+.contact-link:hover {
+  color: var(--link-hover);
+}
+
+footer p {
+  font-size: 14px;
+  margin-top: 8px;
+}
